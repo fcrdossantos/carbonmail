@@ -59,7 +59,7 @@ def send_email(contact, title, content, image_path):
     message["From"] = SMTP_USER
     message["To"] = f"{contact[0]} <{contact[1]}>"
 
-    body = MIMEText(content)
+    body = MIMEText(content.replace("#Nome#", contact[0]))
     message.attach(body)
 
     image = MIMEImage(image_data, name=os.path.basename(image_path))
