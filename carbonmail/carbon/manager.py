@@ -27,7 +27,7 @@ def prepare_payload(code_path):
 
 
 def download_image(code_path):
-    api_url = "https://carbon.pokurt.me/api/cook"
+    api_url = "https://carbon.bylearn.com.br/api/cook"
     payload = prepare_payload(code_path)
 
     response = requests.post(api_url, json=payload)

@@ -8,7 +8,7 @@ def get_layout():
     lists = load_lists()
 
     frame_list = [
-        innerElementSpacer(570),
+        innerElementSpacer(590),
         [
             sg.Text("Selecione a lista:"),
             sg.Combo(lists, default_value=lists[0], key="-Lists-"),
@@ -32,11 +32,11 @@ def get_layout():
                 size=(15, 1),
             ),
         ],
-        innerElementSpacer(570),
+        innerElementSpacer(590),
     ]
 
     frame_import = [
-        innerElementSpacer(570),
+        innerElementSpacer(590),
         [
             sg.Text(
                 "Selecione o arquivo (CSV):",
@@ -58,11 +58,11 @@ def get_layout():
                 size=(15, 1),
             ),
         ],
-        innerElementSpacer(570),
+        innerElementSpacer(590),
     ]
 
     frame_add = [
-        innerElementSpacer(570),
+        innerElementSpacer(590),
         [
             sg.Text("Insira o nome: "),
             sg.InputText(key="-Name-"),
@@ -79,7 +79,7 @@ def get_layout():
                 size=(15, 1),
             ),
         ],
-        innerElementSpacer(570),
+        innerElementSpacer(590),
     ]
 
     layout = [
@@ -112,7 +112,7 @@ def get_layout():
                 size=(15, 1),
             )
         ],
-        innerElementSpacer(570),
+        innerElementSpacer(590),
     ]
     return layout
 
